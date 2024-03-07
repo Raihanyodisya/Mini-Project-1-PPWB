@@ -1,0 +1,263 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.7), rgba(68, 68, 68, 0.7));
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; 
+}
+
+.burger-menu {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.about-image img{
+    width: 400px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+}
+
+.portfolio-heading {
+    font-family: 'Gotham', sans-serif; 
+    font-size: 1.8em; 
+    margin: 0; 
+    padding: 10px 20px; 
+    text-align: left; 
+}
+
+nav {
+    float: right; 
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.portfolio-heading {
+    margin-right: auto;
+}
+
+.portfolio-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #AA0F0F ;
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #222;
+}
+
+section p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(34, 34, 34, 0.7), rgba(68, 68, 68, 0.7));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+    z-index: 100; 
+    transform: translateY(90%); 
+    transition: transform 0.5s ease; 
+}
+
+footer:hover {
+    transform: translateY(0); 
+}
+
+.social-icons {
+    font-size: 32px;
+} 
+
+.social-icons a {
+    color: #fff; 
+    margin-right: 28px; 
+}
+
+.social-icons a:hover {
+    color: #AA0F0F; 
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+}
+
+#educations table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#educations th, #educations td {
+    border: 1px solid #222; 
+    padding: 8px;
+    text-align: left;
+    color: #222; 
+}
+
+#educations th {
+    background-color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .show-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Media queries for responsive design */
+/* @media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p,
+    section ul li {
+        font-size: 1em;
+    }
+} */
